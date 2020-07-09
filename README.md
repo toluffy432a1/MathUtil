@@ -9,5 +9,5 @@ This repository contains the source code of a simple Java app. It is used to dem
 ## Contact me via:
 1. [Github](https://github.com/toluffy432a1)
 2. [Facebook](https://facebook.com/chop.chep)
-
+3. [Gmail](toluffy432a1@gmail.com)
 ### © 2020 by Phuc
