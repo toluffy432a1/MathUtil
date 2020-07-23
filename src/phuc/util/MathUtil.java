@@ -18,11 +18,20 @@ public class MathUtil {
     //int chỉ tối đã 2 tỷ 1, phải để long cho đỡ bị tràn kết quả
     //mình chỉ nên tính n<= 15 vì 20! to lắm
     public static long computeFactorial(int n) {
-        
-        long result = 1;
-        for (int i = 1; i <= n; i++) {
-            result *= i;
+
+        //chặn cà chớn dựa vào, ném về ngoại lệ
+        if (n < 0 || n > 15) {
+            throw new IllegalArgumentException("n must be >= 0 & n <= 15");
         }
-        return result;
+//        long result = 1;
+//        for (int i = 1; i <= n; i++) {
+//            result *= i;
+//        }
+//        return result;
+        if (n == 0 || n == 1) {
+            return 1; //điểm dừng
+        }
+        //sống sốt đến lệnh này, sure, n > 1
+        return n * computeFactorial(n - 1);
     }
 }
